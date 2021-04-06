@@ -1,0 +1,34 @@
+// basic less functions
+
+.clear(){
+    content: '';
+    clear: both;
+    width: 100%;
+    display: table;
+}
+.clear-after(){
+    &:after{
+        .clear();
+    }
+}
+.scale( @x ){
+    -webkit-transform: scale( @x );
+    transform: scale( @x );
+}
+.theme-transition(){
+	.transition( all .2s ease-out );
+}
+.transition( @transition: all .3s linear ){
+    .prop-transition( @transition ) when not ( @transition = null ) and not ( @transition = theme-transition ){
+        transition: @transition;
+    }
+
+    .prop-transition( @transition ) when ( @transition = theme-transition ){
+        .theme-transition();
+    }
+
+    .prop-transition( @transition );
+}
+.transition( @time , @action ){
+    transition: @time, @action;
+}

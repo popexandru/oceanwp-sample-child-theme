@@ -1,0 +1,106 @@
+a.s360-sizes{
+    margin-top: 6px;
+    display: inline-block;
+
+    i{
+        color: #999;
+        margin-right: 5px;
+    }
+}
+.s360-light-box-wrapper{
+    display: none;
+
+    position: absolute;
+    z-index: 100000;
+
+    &.light-box{
+        display: block;
+    }
+
+    .s360-shadow{
+    	background: rgba( 255, 255, 255, 0.95 );
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	top: 0px;
+    	left: 0px;
+    	z-index: 100;
+    }
+
+    .s360-light-box-inner{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100vh;
+        z-index: 99999;
+    }
+
+    a.s360-close{
+        color: rgba( 0,0,0, 0.6 );
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 36px;
+        line-height: 46px;
+        width: 46px;
+        height: 46px;
+        z-index: 102;
+
+        &:hover{
+            color: rgba( 0,0,0, 0.8 );
+            cursor: pointer;
+        }
+    }
+
+    .flex-item {
+    	margin: -50px auto 0 auto;
+    	width: 1000px;
+    	max-width: -webkit-calc( ~"100% - 80px" );
+    	max-width: -moz-calc( ~"100% - 80px" );
+    	max-width: calc( ~"100% - 80px" );
+    	z-index: 101;
+
+    	-webkit-transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        transition: all .5s ease-out;
+
+    	img{
+            width: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0px auto;
+
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+
+            max-height: -webkit-calc( ~"100% - 60px" );
+            max-height: -moz-calc( ~"100% - 60px" );
+            max-height: calc( ~"100% - 60px" );
+
+            -webkit-box-shadow: 0 8px 34px rgba(0,0,0,.12);
+            -moz-box-shadow: 0 8px 34px rgba(0,0,0,.12);
+            box-shadow: 0 8px 34px rgba(0,0,0,.12);
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+    	&.slide-down{
+	        margin-top: 0px;
+        }
+
+    	@media (max-width: 991px ){
+        	max-width: -webkit-calc( ~"100% - 60px" );
+        	max-width: -moz-calc( ~"100% - 60px" );
+        	max-width: calc( ~"100% - 60px" );
+        }
+        @media (max-width: 767px ){
+        	max-width: -webkit-calc( ~"100% - 40px" );
+        	max-width: -moz-calc( ~"100% - 40px" );
+        	max-width: calc( ~"100% - 40px" );
+        }
+    }
+}

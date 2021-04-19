@@ -1,0 +1,144 @@
+#animation{
+
+    // BACKGROUND COLOR
+    .bkg-color{
+
+        // Default values
+        .deff(){
+            @s360--name : s360-bkg-color;
+            @s360--from : rgba(0,0,0, 0.8);
+            @s360--to   : rgba(0,0,0, 0);
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            .s360-bkg-color(){
+                from{
+                    .prop( background-color, @s360--from );
+                }
+                to{
+                    .prop( background-color, @s360--to );
+                }
+            }
+
+            @keyframes @s360--name{
+                .s360-bkg-color();
+            }
+        }
+
+        // Default without Callback
+        .new(){
+            #animation.bkg-color.deff();
+
+            .callback(){
+
+            };
+            #animation.bkg-color.props();
+        }
+        .new( @callback ){
+            #animation.bkg-color.deff();
+
+            @callback();
+
+            #animation.bkg-color.props();
+        }
+    }
+
+
+    // SLIDE FROM TOP
+    .slide-top{
+    }
+
+
+    // SLIDE FROM RIGHT
+    .slide-right{
+    }
+
+
+    // SLIDE FROM BOTTOM
+    .slide-bottom{
+    }
+
+
+    // SLIDE FROM LEFT
+    .slide-left{
+    }
+
+
+    // BOX SHADOW
+    .box-shadow{
+    }
+
+
+    // NAV MOBILE WITH SLIDE FROM
+    .nav-mobile{
+
+        // Default values
+        .deff(){
+            @s360--name                 : s360-nav-mobile;
+
+            @s360--from-left            : -240px;
+            @s360--from-box-shadow      : 0px 0px 20px 10px rgba( 0,0,0, 0.0 );
+
+            @s360--to-left              : 0px;
+            @s360--to-box-shadow        : 0px 0px 20px 10px rgba( 0,0,0, 0.15 );
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            .s360-nav-mobile(){
+                from{
+                    .prop( left,            @s360--from-left );
+                    .prop( box-shadow,      @s360--from-box-shadow );
+                }
+                to{
+                    .prop( left,            @s360--to-left );
+                    .prop( box-shadow,      @s360--to-box-shadow );
+                }
+            }
+
+            @keyframes @s360--name{
+                .s360-nav-mobile();
+            }
+        }
+
+        // Default without Callback
+        .new(){
+            #animation.nav-mobile.deff();
+
+            .callback(){
+
+            };
+            #animation.nav-mobile.props();
+        }
+        .new( @callback ){
+            #animation.nav-mobile.deff();
+
+            @callback();
+
+            #animation.nav-mobile.props();
+        }
+    }
+
+
+
+    // TO DO:
+    .zoom{
+
+    }
+    .pulse{
+
+    }
+    .load{
+
+    }
+    .gradient{
+
+    }
+}

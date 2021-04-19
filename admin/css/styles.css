@@ -1,0 +1,56 @@
+.s360-field label {
+  diplay: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.s360-field label small {
+  display: block;
+  color: #666;
+  font-weight: normal;
+}
+.s360-field input[type=\"text\"],
+.s360-field input[type=\"url\"],
+.s360-field input[type=\"number\"],
+.s360-field input[type=\"email\"],
+.s360-field input[type=\"search\"],
+.s360-field input[type=\"date\"],
+.s360-field textarea,
+.s360-field select {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.s360-field input[type=\"url\"] + input[type=\"button\"],
+.s360-field input[type=\"url\"] + input[type=\"submit\"],
+.s360-field input[type=\"url\"] + button[type=\"button\"],
+.s360-field input[type=\"url\"] + button[type=\"submit\"] {
+  margin-top: 10px;
+}
+.s360-page {
+  padding-right: 20px;
+}
+#s360-build-table-sizes {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+#s360-build-table-sizes:after {
+  content: \'\';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.s360-build-table-size {
+  width: 50%;
+  padding: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+.s360-build-table-size-inner {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.s360-build-table-size-inner textarea.s360-height-360 {
+  height: 360px;
+}

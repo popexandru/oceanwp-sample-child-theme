@@ -1,0 +1,22 @@
+a,
+a:hover,
+a:focus,
+a:active,
+a:focus:active {
+  outline: none !important;
+}
+@media (min-width: 768px) {
+  .woocommerce-cart table.cart img {
+    max-width: 140px !important;
+    width: 140px !important;
+  }
+  .woocommerce table.shop_table td.product-thumbnail {
+    width: 140px !important;
+  }
+}
+.woocommerce .cart-collaterals h2 {
+  text-align: left;
+}
+.woocommerce-page .cart-collaterals .cart_totals {
+  width: 100%;
+}

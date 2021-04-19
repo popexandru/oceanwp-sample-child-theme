@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Less inc features</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            html, body{
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                font-family: 13px;
+                color: #454545;
+            }
+            h1, h2, h3, h4, h5, h6{
+                color: #000000;
+            }
+            .container{
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            header{
+                padding: 20px 30px;
+            }
+            main:after{
+                content: '';
+                display: table;
+                width: 100%;
+                clear: both;
+            }
+            aside{
+                border-right: 1px solid rgba( 0,0,0, 0.1 );
+                float: left;
+                padding: 20px 30px;
+                width: 300px;
+            }
+            aside > ul{
+                margin: 0px;
+            }
+            .content{
+                width: calc( 100% - 300px );
+                float: left;
+                padding: 20px 30px;
+            }
+            .content h2:first-child{
+                margin-top: 0px;
+            }
+            .content h3{
+                margin-top: 36px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgba(0,0,0, 0.1);
+            }
+            pre{
+                background: #f9f9f9;
+                border-radius: 3px;
+                color: #454545;
+                padding: 15px 20px;
+                line-height: 20px;
+                font-size: 13px;
+                letter-spacing: -0.15px;
+            }
+            pre.dark-skin{
+                background: #1a1e25;
+                color: #bfd2db;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header class="container">
+            <p><strong>Less inc features <sup>v. 1</sup></strong></p>
+            <p>April 15, 2021</p>
+        </header>
+        <main class="container">
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#s360-animation">Animation</a>
+                        <ul>
+                            <li><a href="#s360-animation-bkg-color">.bkg-color</a></li>
+                            <li>.slide-top</li>
+                            <li>.slide-right</li>
+                            <li>.slide-bottom</li>
+                            <li>.slide-left</li>
+                            <li>.box-shadow</li>
+                            <li><a href="#s360-animation-nav-mobile">.nav-mobile</a></li>
+                            <li>.zoom</li>
+                            <li>.pulse</li>
+                            <li>.load</li>
+                            <li>.gradient</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Banner</a>
+                        <ul>
+                            <li><a href="">.media</a></li>
+                            <li><a href="">.media-image</a></li>
+                            <li><a href="">.parallax-media-image</a></li>
+                            <li><a href="">.mask</a></li>
+                            <li><a href="">.cnt-wrap</a></li>
+                            <li><a href="">.cnt-wrap</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Button</a></li>
+                    <li><a href="#">Form</a></li>
+                    <li><a href="#">Navigation</a></li>
+                    <li><a href="#">Mobile Navigation</a></li>
+                    <li><a href="#">Popup</a></li>
+                </ul>
+            </aside>
+            <div class="content">
+                <h2 id="s360-animation">Animation</h2>
+                <p>path: /inc/animation.less</p>
+
+                <h3 id="s360-animation-bkg-color">.bkg-color</h3>
+
+                <h4>Default properties</h4>
+
+<pre>
+@s360--name : s360-bkg-color;
+@s360--from : rgba(0,0,0, 0.8);
+@s360--to   : rgba(0,0,0, 0);
+</pre>
+
+                <h4>How to use</h4>
+
+                <p>Define keyframes animation with default properties.</p>
+<pre>
+#animation.bkg-color.new();
+</pre>
+
+                <p>output:</p>
+<pre>
+@keyframes s360-bkg-color {
+    from {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+</pre>
+
+                <p>Define keyframes animation with custom properties.</p>
+
+<pre>
+#animation.bkg-color.new({
+    .callback(){
+        @s360--name : bkg-fade-out;
+        @s360--from : rgba( 0,0,0, 1);
+    }
+});
+</pre>
+
+                <p>output:</p>
+<pre>
+@keyframes bkg-fade-out {
+    from {
+        background-color: #000000;
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+</pre>
+
+                <h3 id="s360-animation-nav-mobile">.nav-mobile</h3>
+
+                <h4>Default properties</h4>
+<pre>
+@s360--name             : s360-nav-mobile;
+
+@s360--from-left        : -240px;
+@s360--from-box-shadow  : 0px 0px 20px 10px rgba( 0,0,0, 0.0 );
+
+@s360--to-left          : 0px;
+@s360--to-box-shadow    : 0px 0px 20px 10px rgba( 0,0,0, 0.15 );
+</pre>
+
+                <h4>How to use</h4>
+
+                <p>Define keyframes animation with default properties.</p>
+<pre>
+#animation.nav-mobile.new();
+</pre>
+
+                <p>output:</p>
+<pre>
+@keyframes s360-nav-mobile {
+    from {
+        left: -240px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0);
+    }
+    to {
+        left: 0px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+</pre>
+                <p>Define keyframes animation with custom properties.</p>
+<pre>
+#animation.nav-mobile.new({
+    .callback(){
+        @s360--name         : mobile-slide;
+        @s360--from-left    : -350px;
+    }
+});
+</pre>
+                <p>output:</p>
+<pre>
+@keyframes mobile-slide {
+    from {
+        left: -350px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0);
+    }
+    to {
+        left: 0px;
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+</pre>
+            </div>
+        <main>
+    </body>
+</html>

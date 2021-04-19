@@ -1,0 +1,48 @@
+#base{
+    // Default values
+    .deff(){
+        @s360--a-color : null;
+    }
+
+    // Dynamic props
+    .props(){
+
+        // Reset default values
+        .callback();
+
+        // Color
+        .a-color{
+            .prop( color,  @s360--a-color );
+        }
+        .a-bkg{
+            .prop( background-color, @s360--a-color );
+        }
+        .a-border{
+            .prop( border-color, @s360--a-color );
+        }
+    }
+
+    // Methods
+    .new( @callback ){
+
+        // Static props
+        .d-block{
+            display: block;
+        }
+        .d-table{
+            display: table !important;
+        }
+        .d-table-cell{
+            display: table-cell !important;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+
+        #base.deff();
+
+        @callback();
+
+        #base.props();
+    }
+}

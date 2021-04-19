@@ -1,13 +1,14 @@
-@import "../../assets/less/functions.less";
-@import "functions.less";
+// include general assets
+@import "../../assets/less/main.less";
 
-// to do less scripts
-@accent-color: coral;
+// include local functions
+@import "func.less";
 
+// default vars
+@a-color: #360;
+
+@import '_reset.less';
 @import '_woo.less';
-@import '_contact-form-7.less';
-
-@import '_base.less';
 
 //@import '_cols.less';
 //@import '_slick.less';
@@ -20,9 +21,3 @@
 //@import 'shortcodes/_articles.less';
 //@import 'shortcodes/_products.less';
 //@import 'shortcodes/_testimonials.less';
-
-a{
-    &, &:hover, &:focus, &:active, &:focus:active{
-        outline: none !important;
-    }
-}

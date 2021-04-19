@@ -1,0 +1,1777 @@
+
+
+
+
+// TEXTAREA
+
+
+// RADIO AND CHECKBOX INPUT
+
+
+.reset-form-element( @reset ){
+
+}
+
+#form{
+
+    // General for all inputs
+    .input{
+
+        // Default values
+        .deff(){
+            @s360--background                   : null;
+            @s360--background-color             : null;
+
+            @s360--border                       : null;
+            @s360--border-color                 : null;
+            @s360--border-width                 : null;
+            @s360--border-style                 : null;
+            @s360--border-top                   : null;
+            @s360--border-right                 : null;
+            @s360--border-bottom                : null;
+            @s360--border-left                  : null;
+
+            @s360--color                        : null;
+            @s360--display                      : null;
+
+            @s360--font-family                  : null;
+            @s360--font-size                    : null;
+            @s360--font-weight                  : null;
+            @s360--font-style                   : null;
+            @s360--line-height                  : null;
+
+            @s360--height                       : null;
+            @s360--width                        : null;
+            @s360--max-width                    : null;
+            @s360--min-width                    : null;
+
+            @s360--margin                       : null;
+            @s360--padding                      : null;
+
+            @s360--text-transform               : null;
+            @s360--text-shadow                  : null;
+            @s360--letter-spacing               : null;
+
+            @s360--box-shadow                   : null;
+            @s360--border-radius                : null;
+            @s360--transition                   : theme-transition;
+            @s360--reset-outline                : null;
+
+            // ACTIONS
+            // SELF AND ALL ACTIONS
+            @s360--all-background               : null;
+            @s360--all-background-color         : null;
+
+            @s360--all-border                   : null;
+            @s360--all-border-color             : null;
+            @s360--all-border-width             : null;
+            @s360--all-border-style             : null;
+            @s360--all-border-top               : null;
+            @s360--all-border-right             : null;
+            @s360--all-border-bottom            : null;
+            @s360--all-border-left              : null;
+
+            @s360--all-color                    : null;
+            @s360--all-letter-spacing           : null;
+            @s360--all-text-shadow              : null;
+            @s360--all-box-shadow               : null;
+            @s360--all-reset-outline            : null;
+
+            // ON MOUSE HOVER
+            @s360--h-background                 : null;
+            @s360--h-background-color           : null;
+
+            @s360--h-border                     : null;
+            @s360--h-border-color               : null;
+            @s360--h-border-width               : null;
+            @s360--h-border-style               : null;
+            @s360--h-border-top                 : null;
+            @s360--h-border-right               : null;
+            @s360--h-border-bottom              : null;
+            @s360--h-border-left                : null;
+
+            @s360--h-color                      : null;
+            @s360--h-letter-spacing             : null;
+            @s360--h-text-shadow                : null;
+            @s360--h-box-shadow                 : null;
+            @s360--h-box-shadow                 : null;
+            @s360--h-reset-outline              : null;
+
+            // ON MOUSE FOCUS OR / AND ACTIVE INPUT
+            @s360--fa-background                : null;
+            @s360--fa-background-color          : null;
+
+            @s360--fa-border                    : null;
+            @s360--fa-border-color              : null;
+            @s360--fa-border-width              : null;
+            @s360--fa-border-style              : null;
+            @s360--fa-border-top                : null;
+            @s360--fa-border-right              : null;
+            @s360--fa-border-bottom             : null;
+            @s360--fa-border-left               : null;
+
+            @s360--fa-color                     : null;
+            @s360--fa-letter-spacing            : null;
+            @s360--fa-text-shadow               : null;
+            @s360--fa-box-shadow                : null;
+            @s360--fa-reset-outline             : null;
+
+            // HOVER, FOCUS AND ACTIVE
+            @s360--hfa-background               : null;
+            @s360--hfa-background-color         : null;
+
+            @s360--hfa-border                   : null;
+            @s360--hfa-border-color             : null;
+            @s360--hfa-border-width             : null;
+            @s360--hfa-border-style             : null;
+            @s360--hfa-border-top               : null;
+            @s360--hfa-border-right             : null;
+            @s360--hfa-border-bottom            : null;
+            @s360--hfa-border-left              : null;
+
+            @s360--hfa-color                    : null;
+            @s360--hfa-letter-spacing           : null;
+            @s360--hfa-text-shadow              : null;
+            @s360--hfa-box-shadow               : null;
+            @s360--hfa-reset-outline            : null;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // default properties
+            .prop( background,              @s360--background );
+            .prop( background-color,        @s360--background-color );
+
+            .prop( border,                  @s360--border );
+            .prop( border-color,            @s360--border-color );
+            .prop( border-width,            @s360--border-width );
+            .prop( border-style,            @s360--border-style );
+            .prop( border-top,              @s360--border-top );
+            .prop( border-right,            @s360--border-right );
+            .prop( border-bottom,           @s360--border-bottom );
+            .prop( border-left,             @s360--border-left );
+
+            .prop( color,                   @s360--color );
+            .prop( display,                 @s360--display );
+
+            .prop( font-family,             @s360--font-family );
+            .prop( font-size,               @s360--font-size );
+            .prop( font-weight,             @s360--font-weight );
+            .prop( font-style,              @s360--font-style );
+            .prop( line-height,             @s360--line-height );
+
+            .prop( height,                  @s360--height );
+            .prop( width,                   @s360--width );
+            .prop( max-width,               @s360--max-width );
+            .prop( min-width,               @s360--min-width );
+
+            .prop( margin,                  @s360--margin );
+            .prop( padding,                 @s360--padding );
+
+            .prop( text-transform,          @s360--text-transform );
+            .prop( text-shadow,             @s360--text-shadow );
+            .prop( letter-spacing,          @s360--letter-spacing );
+
+            .prop( box-shadow,              @s360--box-shadow );
+            .prop( border-radius,           @s360--border-radius );
+
+            .transition( @s360--transition );
+            .reset-outline( @s360--reset-outline );
+
+            &, &:hover, &:focus, &:active, &:focus:active{
+                .prop( background,              @s360--all-background );
+                .prop( background-color,        @s360--all-background-color );
+
+                .prop( border,                  @s360--all-border );
+                .prop( border-color,            @s360--all-border-color );
+                .prop( border-width,            @s360--all-border-width );
+                .prop( border-style,            @s360--all-border-style );
+                .prop( border-top,              @s360--all-border-top );
+                .prop( border-right,            @s360--all-border-right );
+                .prop( border-bottom,           @s360--all-border-bottom );
+                .prop( border-left,             @s360--all-border-left );
+
+                .prop( color,                   @s360--all-color );
+                .prop( letter-spacing,          @s360--all-letter-spacing );
+                .prop( text-shadow,             @s360--all-text-shadow );
+                .prop( box-shadow,              @s360--all-box-shadow );
+
+                .reset-outline( @s360--all-reset-outline );
+            }
+
+            &:hover{
+                .prop( background,              @s360--h-background );
+                .prop( background-color,        @s360--h-background-color );
+
+                .prop( border,                  @s360--h-border );
+                .prop( border-color,            @s360--h-border-color );
+                .prop( border-width,            @s360--h-border-width );
+                .prop( border-style,            @s360--h-border-style );
+                .prop( border-top,              @s360--h-border-top );
+                .prop( border-right,            @s360--h-border-right );
+                .prop( border-bottom,           @s360--h-border-bottom );
+                .prop( border-left,             @s360--h-border-left );
+
+                .prop( color,                   @s360--h-color );
+                .prop( letter-spacing,          @s360--h-letter-spacing );
+                .prop( text-shadow,             @s360--h-text-shadow );
+                .prop( box-shadow,              @s360--h-box-shadow );
+
+                .reset-outline( @s360--h-reset-outline );
+            }
+
+            &:focus, &:active{
+                .prop( background,              @s360--fa-background );
+                .prop( background-color,        @s360--fa-background-color );
+
+                .prop( border,                  @s360--fa-border );
+                .prop( border-color,            @s360--fa-border-color );
+                .prop( border-width,            @s360--fa-border-width );
+                .prop( border-style,            @s360--fa-border-style );
+                .prop( border-top,              @s360--fa-border-top );
+                .prop( border-right,            @s360--fa-border-right );
+                .prop( border-bottom,           @s360--fa-border-bottom );
+                .prop( border-left,             @s360--fa-border-left );
+
+                .prop( color,                   @s360--fa-color );
+                .prop( letter-spacing,          @s360--fa-letter-spacing );
+                .prop( text-shadow,             @s360--fa-text-shadow );
+                .prop( box-shadow,              @s360--fa-box-shadow );
+
+                .reset-outline( @s360--fa-reset-outline );
+            }
+
+            &:hover, &:focus, &:active{
+                .prop( background,              @s360--hfa-background );
+                .prop( background-color,        @s360--hfa-background-color );
+
+                .prop( border,                  @s360--hfa-border );
+                .prop( border-color,            @s360--hfa-border-color );
+                .prop( border-width,            @s360--hfa-border-width );
+                .prop( border-style,            @s360--hfa-border-style );
+                .prop( border-top,              @s360--hfa-border-top );
+                .prop( border-right,            @s360--hfa-border-right );
+                .prop( border-bottom,           @s360--hfa-border-bottom );
+                .prop( border-left,             @s360--hfa-border-left );
+
+                .prop( color,                   @s360--hfa-color );
+                .prop( letter-spacing,          @s360--hfa-letter-spacing );
+                .prop( text-shadow,             @s360--hfa-text-shadow );
+                .prop( box-shadow,              @s360--hfa-box-shadow );
+
+                .reset-outline( @s360--hfa-reset-outline );
+            }
+        };
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #form.input.deff();
+
+            @callback();
+
+            #form.input.props();
+        };
+
+        // Default without Callback
+        .new(){
+            select,
+            textarea,
+            //input[type="file"],
+            input[type="date"],
+            input[type="time"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="text"],
+            input[type="email"],
+            input[type="phone"],
+            input[type="search"],
+            input[type="number"],
+            input[type="password"],
+            .select2-container--default .select2-selection--single{
+                #form.input.deff();
+
+                .callback(){
+
+                };
+                #form.input.props();
+            }
+        };
+
+        .new( @callback ){
+            select,
+            textarea,
+            //input[type="file"],
+            input[type="date"],
+            input[type="time"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="text"],
+            input[type="email"],
+            input[type="phone"],
+            input[type="search"],
+            input[type="number"],
+            input[type="password"],
+            .select2-container--default .select2-selection--single{
+                #form.input.deff();
+
+                @callback();
+
+                #form.input.props();
+            }
+        };
+
+        .new( @class, @callback ){
+            select,
+            textarea,
+            //input[type="file"],
+            input[type="date"],
+            input[type="time"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="text"],
+            input[type="email"],
+            input[type="phone"],
+            input[type="search"],
+            input[type="number"],
+            input[type="password"],
+            .select2-container--default .select2-selection--single{
+                &.@{class}{
+                    #form.input.deff();
+
+                    @callback();
+
+                    #form.input.props();
+                }
+            }
+        };
+
+        #new( @id, @callback ){
+            select,
+            textarea,
+            //input[type="file"],
+            input[type="date"],
+            input[type="time"],
+            input[type="datetime-local"],
+            input[type="month"],
+            input[type="tel"],
+            input[type="url"],
+            input[type="text"],
+            input[type="email"],
+            input[type="phone"],
+            input[type="search"],
+            input[type="number"],
+            input[type="password"],
+            .select2-container--default .select2-selection--single{
+                &#@{id}{
+                    #form.input.deff();
+
+                    @callback();
+
+                    #form.input.props();
+                }
+            }
+        };
+    }
+
+
+    // SELECT
+    .select{
+
+        // Default values
+        .deff(){
+            @s360--background                   : null;
+            @s360--background-color             : null;
+            @s360--background-image             : url(../img/select-arrow.png);
+            @s360--background-position          : center right;
+            @s360--background-repeat            : no-repeat;
+
+            @s360--color                        : null;
+
+            @s360--font-size                    : null;
+            @s360--font-weight                  : null;
+            @s360--line-height                  : null;
+
+            @s360--height                       : null;
+
+            @s360--margin                       : null;
+            @s360--margin-top                   : null;
+            @s360--margin-right                 : null;
+            @s360--margin-bottom                : null;
+            @s360--margin-left                  : null;
+
+            @s360--padding                      : null;
+            @s360--padding-top                  : null;
+            @s360--padding-right                : 33px;
+            @s360--padding-bottom               : null;
+            @s360--padding-left                 : null;
+
+            @s360--appearance                   : none;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( background,              @s360--background );
+            .prop( background-color,        @s360--background-color );
+            .prop( background-image,        @s360--background-image );
+            .prop( background-position,     @s360--background-position );
+            .prop( background-repeat,       @s360--background-repeat );
+
+            .prop( color,                   @s360--color );
+
+            .prop( font-size,               @s360--font-size );
+            .prop( font-weight,             @s360--font-weight );
+            .prop( line-height,             @s360--line-height );
+
+            .prop( height,                  @s360--height );
+
+            .prop( margin,                  @s360--margin );
+            .prop( margin-top,              @s360--margin-top );
+            .prop( margin-right,            @s360--margin-right );
+            .prop( margin-bottom,           @s360--margin-bottom );
+            .prop( margin-left,             @s360--margin-left );
+
+            .prop( padding,                 @s360--padding );
+            .prop( padding-top,             @s360--padding-top );
+            .prop( padding-right,           @s360--padding-right );
+            .prop( padding-bottom,          @s360--padding-bottom );
+            .prop( padding-left,            @s360--padding-left );
+
+            .prop( -webkit-appearance,      @s360--appearance );
+            .prop( -moz-appearance,         @s360--appearance );
+            .prop( appearance,              @s360--appearance );
+        };
+
+        // Default without Callback
+        .new(){
+            select{
+                #form.select.deff();
+
+                .callback(){
+
+                };
+                #form.select.props();
+            }
+        };
+        // Default
+        .new( @callback ){
+            select{
+                #form.select.deff();
+
+                @callback();
+
+                #form.select.props();
+            }
+        };
+        // With custom Class
+        .new( @class, @callback ){
+            select.@{class}{
+                #form.select.deff();
+
+                @callback();
+
+                #form.select.props();
+            }
+        };
+        // With custom Id
+        #new( @id, @callback ){
+            select#@{id}{
+                #form.select.deff();
+
+                @callback();
+
+                #form.select.props();
+            }
+        };
+    };
+
+    // TEXTAREA
+    .textarea{
+
+        // Default values
+        .deff(){
+            @s360--color                        : null;
+
+            @s360--font-size                    : null;
+            @s360--font-weight                  : null;
+            @s360--line-height                  : null;
+
+            @s360--height                       : null;
+
+            @s360--margin                       : null;
+            @s360--margin-top                   : null;
+            @s360--margin-right                 : null;
+            @s360--margin-bottom                : null;
+            @s360--margin-left                  : null;
+
+            @s360--padding                      : null;
+            @s360--padding-top                  : null;
+            @s360--padding-right                : null;
+            @s360--padding-bottom               : null;
+            @s360--padding-left                 : null;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( color,                   @s360--color );
+
+            .prop( font-size,               @s360--font-size );
+            .prop( font-weight,             @s360--font-weight );
+            .prop( line-height,             @s360--line-height );
+
+            .prop( height,                  @s360--height );
+
+            .prop( margin,                  @s360--margin );
+            .prop( margin-top,              @s360--margin-top );
+            .prop( margin-right,            @s360--margin-right );
+            .prop( margin-bottom,           @s360--margin-bottom );
+            .prop( margin-left,             @s360--margin-left );
+
+            .prop( padding,                 @s360--padding );
+            .prop( padding-top,             @s360--padding-top );
+            .prop( padding-right,           @s360--padding-right );
+            .prop( padding-bottom,          @s360--padding-bottom );
+            .prop( padding-left,            @s360--padding-left );
+        };
+
+        // Default without Callback
+        .new(){
+            textarea{
+                #form.textarea.deff();
+
+                .callback(){
+
+                };
+                #form.textarea.props();
+            }
+        };
+        .new( @callback ){
+            textarea{
+                #form.textarea.deff();
+
+                @callback();
+
+                #form.textarea.props();
+            }
+        };
+        .new( @class, @callback ){
+            textarea.@{class}{
+                #form.textarea.deff();
+
+                @callback();
+
+                #form.textarea.props();
+            }
+        };
+        #new( @reset-properties, @id ){
+            textarea#@{id}{
+                #form.textarea.deff();
+
+                @callback();
+
+                #form.textarea.props();
+            }
+        };
+    };
+
+    // INPUT TYPE RADIO AND CHECKBOX
+    .box{
+
+        // Default values
+        .deff(){
+            @s360--display                      : null;
+            @s360--float                        : null;
+
+            @s360--font-size                    : null;
+            @s360--line-height                  : null;
+
+            @s360--height                       : null;
+            @s360--width                        : null;
+
+            @s360--margin                       : null;
+            @s360--margin-top                   : null;
+            @s360--margin-right                 : null;
+            @s360--margin-bottom                : null;
+            @s360--margin-left                  : null;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( display,                 @s360--display );
+            .prop( float,                   @s360--float );
+
+            .prop( font-size,               @s360--font-size );
+            .prop( line-height,             @s360--line-height );
+
+            .prop( height,                  @s360--height );
+            .prop( width,                   @s360--width );
+
+            .prop( margin,                  @s360--margin );
+            .prop( margin-top,              @s360--margin-top );
+            .prop( margin-right,            @s360--margin-right );
+            .prop( margin-bottom,           @s360--margin-bottom );
+            .prop( margin-left,             @s360--margin-left );
+        };
+
+        // Default without Callback
+        .new(){
+            input[type="radio"], input[type="checkbox"]{
+                #form.box.deff();
+
+                .callback(){
+
+                };
+                #form.box.props();
+            }
+        };
+        // Default
+        .new( @callback ){
+            input[type="radio"], input[type="checkbox"]{
+                #form.box.deff();
+
+                @callback();
+
+                #form.box.props();
+            }
+        };
+        // With custom Class
+        .new( @class, @callback ){
+            input[type="radio"], input[type="checkbox"]{
+                &.@{class}{
+                    #form.box.deff();
+
+                    @callback();
+
+                    #form.box.props();
+                }
+            }
+        };
+        // With custom Id
+        #new( @id, @callback ){
+            input[type="radio"], input[type="checkbox"]{
+                &#@{id}{
+                    #form.box.deff();
+
+                    @callback();
+
+                    #form.box.props();
+                }
+            }
+        };
+    };
+
+    // POST PASSWORD
+    .post-pass{
+
+        // Default values
+        .deff(){
+            @s360--display                      : null;
+            @s360--float                        : null;
+
+            @s360--font-size                    : null;
+            @s360--font-weight                  : null;
+            @s360--line-height                  : null;
+
+            @s360--height                       : null;
+            @s360--width                        : null;
+
+            @s360--margin                       : null;
+            @s360--margin-top                   : null;
+            @s360--margin-right                 : null;
+            @s360--margin-bottom                : null;
+            @s360--margin-left                  : null;
+
+            @s360--padding                      : null;
+            @s360--padding-top                  : null;
+            @s360--padding-right                : null;
+            @s360--padding-bottom               : null;
+            @s360--padding-left                 : null;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( display,                 @s360--display );
+            .prop( float,                   @s360--float );
+
+            .prop( font-size,               @s360--font-size );
+            .prop( font-weight,             @s360--font-weight );
+            .prop( line-height,             @s360--line-height );
+
+            .prop( height,                  @s360--height );
+            .prop( width,                   @s360--width );
+
+            .prop( margin,                  @s360--margin );
+            .prop( margin-top,              @s360--margin-top );
+            .prop( margin-right,            @s360--margin-right );
+            .prop( margin-bottom,           @s360--margin-bottom );
+            .prop( margin-left,             @s360--margin-left );
+
+            .prop( padding,                 @s360--padding );
+            .prop( padding-top,             @s360--padding-top );
+            .prop( padding-right,           @s360--padding-right );
+            .prop( padding-bottom,          @s360--padding-bottom );
+            .prop( padding-left,            @s360--padding-left );
+        };
+        // Default without Callback
+        .new(){
+            input[type="password"][name="post_password"]{
+                #form.post-pass.deff();
+
+                .callback(){
+
+                };
+                #form.post-pass.props();
+            }
+        };
+        // Default
+        .new( @callback ){
+            input[type="password"][name="post_password"]{
+                #form.post-pass.deff();
+
+                @callback();
+
+                #form.post-pass.props();
+            }
+        };
+    }
+
+    // CONTACT FORM 7
+
+    // #form.wpcf7.new({
+    //     .callback(){
+    //         // Reset default values
+    //
+    //         // LABEL
+    //         #form.wpcf7.label.new({
+    //             .callback(){
+    //                 // Reset Label default values
+    //
+    //                 // Additional rules
+    //                 input,
+    //                 select,
+    //                 textarea{
+    //                     width: 100%;
+    //                 }
+    //                 input[type="submit"],
+    //                 input[type="reset"],
+    //                 input[type="button"],
+    //                 input[type="checkbox"],
+    //                 input[type="radio"]{
+    //                     width: auto;
+    //                 }
+    //                 span.wpcf7-form-control-wrap{
+    //                     margin: 0px;
+    //                 }
+    //             }
+    //         });
+    //
+    //         // PARAGRAF
+    //         #form.wpcf7.p.new({
+    //             .callback(){
+    //                 // Reset Paragraf default values
+    //
+    //                 // Additional rules
+    //                 label,
+    //                 span.wpcf7-form-control-wrap{
+    //                     margin: 0px;
+    //                 }
+    //             }
+    //         });
+    //
+    //         // CONTROL WRAPPER
+    //         #form.wpcf7.control-wrap.new();
+    //
+    //         // HINT - DEFAULT
+    //         #form.wpcf7.hint.new();
+    //
+    //         // BOX FIELD ( Accept terms and conditions type field is need to has a wrapper class s360-box-field )
+    //         #form.wpcf7.box-field.new();
+    //
+    //         // SUBMIT FIELD ( Latest field with submit button is need to has a wrapper class s360-submit-field )
+    //         #form.wpcf7.box-field.new();
+    //
+    //         // OUTPUT
+    //         #form.wpcf7.output.new();
+    //
+    //         // ADDITIONAL RULES
+    //         p, label, div{
+    //             position: relative;
+    //             text-align: left;
+    //         }
+    //     }
+    // });
+
+    .wpcf7{
+
+        // Default values
+        .deff(){
+            @s360--margin                           : 0px;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( margin,                      @s360--margin );
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #form.wpcf7.deff();
+
+            @callback();
+
+            #form.wpcf7.props();
+        }
+        // Default without Callback
+        .new(){
+            .wpcf7{
+                #form.wpcf7.deff();
+
+                .callback(){
+
+                };
+                #form.wpcf7.props();
+            }
+        }
+        .new( @callback ){
+            .wpcf7{
+                #form.wpcf7.deff();
+
+                @callback();
+
+                #form.wpcf7.props();
+            }
+        }
+
+
+        // LABEL
+        .label{
+
+            // Default values
+            .deff(){
+                @s360--width                        : 100%;
+
+                @s360--margin                       : null;
+                @s360--margin-top                   : null;
+                @s360--margin-bottom                : null;
+
+                @s360--margin-max-991               : 20px 0px;
+                @s360--margin-top-max-991           : null;
+                @s360--margin-bottom-max-991        : null;
+
+                @s360--margin-max-767               : 18px 0px;
+                @s360--margin-top-max-767           : null;
+                @s360--margin-bottom-max-767        : null;
+
+                @s360--margin-max-580               : 15px 0px;
+                @s360--margin-top-max-580           : null;
+                @s360--margin-bottom-max-580        : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( width,                   @s360--width );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-bottom,           @s360--margin-bottom );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                }
+            }
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.label.deff();
+
+                @callback();
+
+                #form.wpcf7.label.props();
+            }
+            // Default without Callback
+            .new(){
+                label{
+                    #form.wpcf7.label.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.label.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                label{
+                    #form.wpcf7.label.deff();
+
+                    @callback();
+
+                    #form.wpcf7.label.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                label.@{class}{
+                    #form.wpcf7.label.deff();
+
+                    @callback();
+
+                    #form.wpcf7.label.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                label#@{id}{
+                    #form.wpcf7.label.deff();
+
+                    @callback();
+
+                    #form.wpcf7.label.props();
+                }
+            }
+        }
+
+
+        // PARAGRAF
+        .p{
+
+            // Default value
+            .deff(){
+                @s360--margin                       : null;
+                @s360--margin-top                   : null;
+                @s360--margin-bottom                : null;
+
+                @s360--margin-max-991               : 20px 0px;
+                @s360--margin-top-max-991           : null;
+                @s360--margin-bottom-max-991        : null;
+
+                @s360--margin-max-767               : 18px 0px;
+                @s360--margin-top-max-767           : null;
+                @s360--margin-bottom-max-767        : null;
+
+                @s360--margin-max-580               : 15px 0px;
+                @s360--margin-top-max-580           : null;
+                @s360--margin-bottom-max-580        : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-bottom,           @s360--margin-bottom );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                }
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.p.deff();
+
+                @callback();
+
+                #form.wpcf7.p.props();
+            }
+            // Default without Callback
+            .new(){
+                p{
+                    #form.wpcf7.p.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.p.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                p{
+                    #form.wpcf7.p.deff();
+
+                    @callback();
+
+                    #form.wpcf7.p.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                p.@{class}{
+                    #form.wpcf7.p.deff();
+
+                    @callback();
+
+                    #form.wpcf7.p.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                p#@{id}{
+                    #form.wpcf7.p.deff();
+
+                    @callback();
+
+                    #form.wpcf7.p.props();
+                }
+            }
+        }
+
+
+        // CONTROL WRAPPER
+        .control-wrap{
+
+            // Default values
+            .deff(){
+                @s360--display                      : block;
+                @s360--position                     : relative;
+                @s360--text-align                   : left;
+
+                @s360--margin                       : null;
+                @s360--margin-max-991               : null;
+                @s360--margin-max-767               : null;
+                @s360--margin-max-580               : null;
+
+                @s360--margin-top                   : null;
+                @s360--margin-top-max-991           : null;
+                @s360--margin-top-max-767           : null;
+                @s360--margin-top-max-580           : null;
+
+                @s360--margin-right                 : null;
+                @s360--margin-right-max-991         : null;
+                @s360--margin-right-max-767         : null;
+                @s360--margin-right-max-580         : null;
+
+                @s360--margin-bottom                : 24px;
+                @s360--margin-bottom-max-991        : 20px;
+                @s360--margin-bottom-max-767        : 18px;
+                @s360--margin-bottom-max-580        : 15px;
+
+                @s360--margin-left                  : null;
+                @s360--margin-left-max-991          : null;
+                @s360--margin-left-max-767          : null;
+                @s360--margin-left-max-580          : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( display,                 @s360--display );
+                .prop( position,                @s360--position );
+                .prop( text-align,              @s360--text-align );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-right,        @s360--margin-right-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                    .prop( margin-left,         @s360--margin-left-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-right,        @s360--margin-right-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                    .prop( margin-left,         @s360--margin-left-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-right,        @s360--margin-right-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                    .prop( margin-left,         @s360--margin-left-max-580 );
+                }
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.control-wrap.deff();
+
+                @callback();
+
+                #form.wpcf7.control-wrap.props();
+            }
+            // Default without Callback
+            .new(){
+                span.wpcf7-form-control-wrap{
+                    #form.wpcf7.control-wrap.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.control-wrap.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                span.wpcf7-form-control-wrap{
+                    #form.wpcf7.control-wrap.deff();
+
+                    @callback();
+
+                    #form.wpcf7.control-wrap.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                span.wpcf7-form-control-wrap.@{class}{
+                    #form.wpcf7.control-wrap.deff();
+
+                    @callback();
+
+                    #form.wpcf7.control-wrap.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                span.wpcf7-form-control-wrap#@{id}{
+                    #form.wpcf7.control-wrap.deff();
+
+                    @callback();
+
+                    #form.wpcf7.control-wrap.props();
+                }
+            }
+        }
+
+
+        // NOT VALID HINT
+        .hint{
+
+            // Default values
+            .deff(){
+                @s360--background                   : #f00;
+                @s360--color                        : #fff;
+
+                @s360--font-size                    : 12px;
+                @s360--line-height                  : 18px;
+
+                @s360--position                     : absolute;
+                @s360--display                      : inline-block;
+
+                @s360--padding                      : 4px 17px;
+                @s360--padding-top                  : null;
+                @s360--padding-right                : null;
+                @s360--padding-bottom               : null;
+                @s360--padding-left                 : null;
+
+                @s360--top                          : 3px;
+                @s360--right                        : 3px;
+                @s360--bottom                       : -20px;
+                @s360--left                         : 3px;
+
+                @s360--border-radius                : 3px;
+                @s360--box-shadow                   : 0px 2px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( background,              @s360--background );
+                .prop( color,                   @s360--color );
+
+                .prop( font-size,               @s360--font-size );
+                .prop( line-height,             @s360--line-height );
+
+                .prop( position,                @s360--position );
+                .prop( display,                 @s360--display );
+
+                .prop( padding,                 @s360--padding );
+                .prop( padding-top,             @s360--padding-top );
+                .prop( padding-right,           @s360--padding-right );
+                .prop( padding-bottom,          @s360--padding-bottom );
+                .prop( padding-left,            @s360--padding-left );
+
+                .prop( top,                     @s360--top );
+                .prop( right,                   @s360--right );
+                .prop( bottom,                  @s360--bottom );
+                .prop( left,                    @s360--left );
+
+                .prop( border-radius,           @s360--border-radius );
+                .prop( box-shadow,              @s360--box-shadow );
+
+                &:before {
+                    content: '';
+                    border: 5px solid transparent;
+                    border-bottom-color: @s360--background;
+                    display: block;
+                    position: absolute;
+                    margin-top: -13px;
+                    margin-left: -4px;
+                }
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.hint.deff();
+
+                @callback();
+
+                #form.wpcf7.hint.props();
+            }
+            // Default without Callback
+            .new(){
+                span.wpcf7-not-valid-tip{
+                    #form.wpcf7.hint.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.hint.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                span.wpcf7-not-valid-tip{
+                    #form.wpcf7.hint.deff();
+
+                    @callback();
+
+                    #form.wpcf7.hint.props();
+                }
+            }
+        }
+
+        // BOX FIELD ( Accept terms and conditions )
+        .box-field{
+
+            // Default values
+            .deff(){
+                @s360--display                      : block;
+                @s360--text-align                   : left;
+
+                @s360--margin                       : 24px 0px;
+                @s360--margin-max-991               : 20px 0px;
+                @s360--margin-max-767               : 18px 0px;
+                @s360--margin-max-580               : 15px 0px;
+
+                @s360--margin-top                   : null;
+                @s360--margin-top-max-991           : null;
+                @s360--margin-top-max-767           : null;
+                @s360--margin-top-max-580           : null;
+
+                @s360--margin-right                 : null;
+                @s360--margin-right-max-991         : null;
+                @s360--margin-right-max-767         : null;
+                @s360--margin-right-max-580         : null;
+
+                @s360--margin-bottom                : null;
+                @s360--margin-bottom-max-991        : null;
+                @s360--margin-bottom-max-767        : null;
+                @s360--margin-bottom-max-580        : null;
+
+                @s360--margin-left                  : null;
+                @s360--margin-left-max-991          : null;
+                @s360--margin-left-max-767          : null;
+                @s360--margin-left-max-580          : null;
+
+                // BOX INPUT
+                @s360-box--float                    : left;
+
+                @s360-box--margin                   : 5px 15px 0px 0px;
+
+                @s360-box--margin-top               : null;
+                @s360-box--margin-right             : null;
+                @s360-box--margin-bottom            : null;
+                @s360-box--margin-left              : null;
+
+                // TO DO:
+                // @s360-btn--prop                  : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( display,                 @s360--display );
+                .prop( text-align,              @s360--text-align );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-right,        @s360--margin-right-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                    .prop( margin-left,         @s360--margin-left-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-right,        @s360--margin-right-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                    .prop( margin-left,         @s360--margin-left-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-right,        @s360--margin-right-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                    .prop( margin-left,         @s360--margin-left-max-580 );
+                }
+
+                input[type="checkbox"]{
+                    .prop( float,               @s360-box--float );
+
+                    .prop( margin,              @s360-box--margin );
+
+                    .prop( margin-top,          @s360-box--margin-top );
+                    .prop( margin-right,        @s360-box--margin-right );
+                    .prop( margin-bottom,       @s360-box--margin-bottom );
+                    .prop( margin-left,         @s360-box--margin-left );
+                }
+
+                .clear-after();
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.box-field.deff();
+
+                @callback();
+
+                #form.wpcf7.box-field.props();
+            }
+            // Default without Callback
+            .new(){
+                .s360-box-field{
+                    #form.wpcf7.box-field.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.box-field.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-box-field{
+                    #form.wpcf7.box-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.box-field.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                .s360-box-field.@{class}{
+                    #form.wpcf7.box-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.box-field.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                .s360-box-field#@{id}{
+                    #form.wpcf7.box-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.box-field.props();
+                }
+            }
+        }
+
+        // SUBMIT FIELD
+        .submit-field{
+
+            // Default values
+            .deff(){
+                @s360--display                      : block;
+                @s360--text-align                   : left;
+
+                @s360--margin                       : 24px 0px 0px 0px;
+                @s360--margin-max-991               : 20px 0px 0px 0px;
+                @s360--margin-max-767               : 18px 0px 0px 0px;
+                @s360--margin-max-580               : 15px 0px 0px 0px;
+
+                @s360--margin-top                   : null;
+                @s360--margin-top-max-991           : null;
+                @s360--margin-top-max-767           : null;
+                @s360--margin-top-max-580           : null;
+
+                @s360--margin-right                 : null;
+                @s360--margin-right-max-991         : null;
+                @s360--margin-right-max-767         : null;
+                @s360--margin-right-max-580         : null;
+
+                @s360--margin-bottom                : null;
+                @s360--margin-bottom-max-991        : null;
+                @s360--margin-bottom-max-767        : null;
+                @s360--margin-bottom-max-580        : null;
+
+                @s360--margin-left                  : null;
+                @s360--margin-left-max-991          : null;
+                @s360--margin-left-max-767          : null;
+                @s360--margin-left-max-580          : null;
+
+                // TO DO:
+                // @s360-btn--prop                  : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( display,                 @s360--display );
+                .prop( text-align,              @s360--text-align );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-right,        @s360--margin-right-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                    .prop( margin-left,         @s360--margin-left-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-right,        @s360--margin-right-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                    .prop( margin-left,         @s360--margin-left-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-right,        @s360--margin-right-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                    .prop( margin-left,         @s360--margin-left-max-580 );
+                }
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.submit-field.deff();
+
+                @callback();
+
+                #form.wpcf7.submit-field.props();
+            }
+            // Default without Callback
+            .new(){
+                .s360-submit-field{
+                    #form.wpcf7.submit-field.deff();
+
+                    .callback(){
+
+                    };
+                    #form.wpcf7.submit-field.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-submit-field{
+                    #form.wpcf7.submit-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.submit-field.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                .s360-submit-field.@{class}{
+                    #form.wpcf7.submit-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.submit-field.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                .s360-submit-field#@{id}{
+                    #form.wpcf7.submit-field.deff();
+
+                    @callback();
+
+                    #form.wpcf7.submit-field.props();
+                }
+            }
+        }
+
+        // OUTPUT MESSAGE
+        .output{
+
+            // Default values
+            .deff(){
+                @s360--background                   : rgba(255, 255, 255, 0.8);
+                @s360--border                       : 1px solid rgba(0, 0, 0, 0.06);
+
+                @s360--text-align                   : left;
+
+                @s360--font-size                    : 13px;
+                @s360--line-height                  : 24px;
+
+                @s360--margin                       : null;
+                @s360--margin-max-991               : null;
+                @s360--margin-max-767               : null;
+                @s360--margin-max-580               : null;
+
+                @s360--margin-top                   : 24px;
+                @s360--margin-top-max-991           : 20px;
+                @s360--margin-top-max-767           : 18px;
+                @s360--margin-top-max-580           : 15px;
+
+                @s360--margin-right                 : null;
+                @s360--margin-right-max-991         : null;
+                @s360--margin-right-max-767         : null;
+                @s360--margin-right-max-580         : null;
+
+                @s360--margin-bottom                : null;
+                @s360--margin-bottom-max-991        : null;
+                @s360--margin-bottom-max-767        : null;
+                @s360--margin-bottom-max-580        : null;
+
+                @s360--margin-left                  : null;
+                @s360--margin-left-max-991          : null;
+                @s360--margin-left-max-767          : null;
+                @s360--margin-left-max-580          : null;
+
+                @s360--border-radius                : 4px;
+                @s360--box-shadow                   : 0px 0px 15px rgba(0, 0, 0, 0.05);
+
+                // error message
+                @s360-error--border-left            : 5px solid #449649;
+                @s360-error--color                  : #449649;
+
+                // success message
+                @s360-success--border-left          : 5px solid #449649;
+                @s360-success--color                : #449649;
+            }
+
+            .props(){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( background,              @s360--background );
+                .prop( border,                  @s360--border );
+
+                .prop( text-align,              @s360--text-align );
+
+                .prop( font-size,               @s360--font-size );
+                .prop( line-height,             @s360--line-height );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                @media (max-width: 991px){
+                    .prop( margin,              @s360--margin-max-991 );
+                    .prop( margin-top,          @s360--margin-top-max-991 );
+                    .prop( margin-right,        @s360--margin-right-max-991 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-991 );
+                    .prop( margin-left,         @s360--margin-left-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( margin,              @s360--margin-max-767 );
+                    .prop( margin-top,          @s360--margin-top-max-767 );
+                    .prop( margin-right,        @s360--margin-right-max-767 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-767 );
+                    .prop( margin-left,         @s360--margin-left-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( margin,              @s360--margin-max-580 );
+                    .prop( margin-top,          @s360--margin-top-max-580 );
+                    .prop( margin-right,        @s360--margin-right-max-580 );
+                    .prop( margin-bottom,       @s360--margin-bottom-max-580 );
+                    .prop( margin-left,         @s360--margin-left-max-580 );
+                }
+
+                .prop( border-radius,           @s360--border-radius );
+                .prop( box-shadow,              @s360--box-shadow );
+            }
+
+            .props( error ){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( background,              @s360-error--border-left );
+                .prop( border,                  @s360-error--color );
+            }
+
+            .props( success ){
+
+                // Callback alow reset default values
+                .callback();
+
+                // Setup props
+                .prop( background,              @s360-success--border-left );
+                .prop( border,                  @s360-success--color );
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #form.wpcf7.output.deff();
+
+                @callback();
+
+                #form.wpcf7.output.props();
+            }
+            .rules( error, @callback ){
+                #form.wpcf7.output.deff();
+
+                @callback();
+
+                #form.wpcf7.output.props( error );
+            }
+            .rules( success, @callback ){
+                #form.wpcf7.output.deff();
+
+                @callback();
+
+                #form.wpcf7.output.props( success );
+            }
+            // Default without Callback
+            .new(){
+                #form.wpcf7.output.deff();
+
+                .callback(){
+
+                };
+                form.invalid,
+                form.failed,
+                form.unaccepted,
+                form.sent{
+                    #form.wpcf7.output.props();
+                }
+                form.invalid,
+                form.failed,
+                form.unaccepted{
+                    #form.wpcf7.output.props( error );
+                }
+                form.sent div.wpcf7-response-output{
+                    @callback();
+
+                    #form.wpcf7.output.props( success );
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-submit-field{
+                    #form.wpcf7.output.deff();
+
+                    @callback();
+
+                    #form.wpcf7.output.props();
+                }
+            }
+            // Invalid, Faile and Unaccepted output message
+            .new( error, @callback ){
+                form.invalid,
+                form.failed,
+                form.unaccepted{
+                    div.wpcf7-response-output{
+                        #form.wpcf7.output.deff();
+
+                        @callback();
+
+                        #form.wpcf7.output.props( error );
+                    }
+                }
+            }
+            // Success output message
+            .new( success, @callback ){
+                form.sent div.wpcf7-response-output{
+                    #form.wpcf7.output.deff();
+
+                    @callback();
+
+                    #form.wpcf7.output.props( success );
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../../assets/less/main.less";
+@import "functions.less";
+
+@import "inc/animation.less";
+//@import "inc/banner.less";
+
+// to do less scripts
+@accent-color: coral;
+
+//@import '_reset.less';
+//@import '_woo.less';
+//@import '_contact-form-7.less';
+
+//@import '_cols.less';
+//@import '_slick.less';
+//@import '_pagination.less';
+
+//@import '_flex.less';
+//@import '_light-box.less';
+
+//@import 'shortcodes/_team.less';
+//@import 'shortcodes/_articles.less';
+//@import 'shortcodes/_products.less';
+//@import 'shortcodes/_testimonials.less';
+
+#animation.nav-mobile.new({
+    .callback(){
+        @s360--name                 : mobile-slide;
+        @s360--from-left            : -350px;
+    }
+});

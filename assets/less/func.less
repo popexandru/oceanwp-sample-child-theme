@@ -1,5 +1,4 @@
 // basic less functions
-
 .clear(){
     content: '';
     clear: both;
@@ -11,12 +10,12 @@
         .clear();
     }
 }
+.prop( @prop ; @value ) when not ( @value = null ) {
+    @{prop} : @value;
+}
 .scale( @x ){
     -webkit-transform: scale( @x );
     transform: scale( @x );
-}
-.theme-transition(){
-	.transition( all .2s ease-out );
 }
 .transition( @transition: all .3s linear ){
     .prop-transition( @transition ) when not ( @transition = null ) and not ( @transition = theme-transition ){
@@ -31,4 +30,22 @@
 }
 .transition( @time , @action ){
     transition: @time, @action;
+}
+.theme-transition(){
+	.transition( all .2s ease-out );
+}
+.reset-outline( @outline ) when ( @outline = none ){
+    box-shadow: none;
+
+    outline: 0 !important;
+    outline: none !important;
+    outline: 0 none \9 !important;
+    outline: unset !important;
+
+    outline-width: 0 !important;
+    outline-style: none !important;
+    outline-color: rgba( 255, 255, 255, 0) !important;
+    outline-offset: 0 !important;
+
+    filter: - !important;
 }

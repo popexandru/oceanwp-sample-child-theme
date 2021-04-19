@@ -1,0 +1,433 @@
+#button {
+
+    // DEFAULT PROPERTIES
+    .deff(){
+        @s360--background                   : null;
+        @s360--background-color             : null;
+
+        @s360--border                       : null;
+        @s360--border-color                 : null;
+        @s360--border-width                 : null;
+        @s360--border-style                 : null;
+        @s360--border-top                   : null;
+        @s360--border-right                 : null;
+        @s360--border-bottom                : null;
+        @s360--border-left                  : null;
+
+        @s360--color                        : null;
+        @s360--display                      : null;
+
+        @s360--font-family                  : null;
+        @s360--font-size                    : null;
+        @s360--font-weight                  : null;
+        @s360--font-style                   : null;
+        @s360--line-height                  : null;
+
+        @s360--height                       : null;
+        @s360--width                        : null;
+        @s360--max-width                    : null;
+        @s360--min-width                    : null;
+
+        @s360--margin                       : null;
+        @s360--padding                      : null;
+
+        @s360--text-transform               : null;
+        @s360--text-shadow                  : null;
+        @s360--letter-spacing               : null;
+
+        @s360--box-shadow                   : null;
+        @s360--border-radius                : null;
+        @s360--transition                   : theme-transition;
+        @s360--reset-outline                : null;
+
+        // ACTIONS
+        // SELF AND ALL ACTIONS
+        @s360--all-background               : null;
+        @s360--all-background-color         : null;
+
+        @s360--all-border                   : null;
+        @s360--all-border-color             : null;
+        @s360--all-border-width             : null;
+        @s360--all-border-style             : null;
+        @s360--all-border-top               : null;
+        @s360--all-border-right             : null;
+        @s360--all-border-bottom            : null;
+        @s360--all-border-left              : null;
+
+        @s360--all-color                    : null;
+        @s360--all-letter-spacing           : null;
+        @s360--all-text-shadow              : null;
+        @s360--all-box-shadow               : null;
+        @s360--all-reset-outline            : null;
+
+        // ON MOUSE HOVER
+        @s360--h-background                 : null;
+        @s360--h-background-color           : null;
+
+        @s360--h-border                     : null;
+        @s360--h-border-color               : null;
+        @s360--h-border-width               : null;
+        @s360--h-border-style               : null;
+        @s360--h-border-top                 : null;
+        @s360--h-border-right               : null;
+        @s360--h-border-bottom              : null;
+        @s360--h-border-left                : null;
+
+        @s360--h-color                      : null;
+        @s360--h-letter-spacing             : null;
+        @s360--h-text-shadow                : null;
+        @s360--h-box-shadow                 : null;
+        @s360--h-reset-outline              : null;
+
+        // ON MOUSE FOCUS
+        @s360--f-background                 : null;
+        @s360--f-background-color           : null;
+
+        @s360--f-border                     : null;
+        @s360--f-border-color               : null;
+        @s360--f-border-width               : null;
+        @s360--f-border-style               : null;
+        @s360--f-border-top                 : null;
+        @s360--f-border-right               : null;
+        @s360--f-border-bottom              : null;
+        @s360--f-border-left                : null;
+
+        @s360--f-color                      : null;
+        @s360--f-letter-spacing             : null;
+        @s360--f-text-shadow                : null;
+        @s360--f-box-shadow                 : null;
+        @s360--f-reset-outline              : null;
+
+        // ON MOUSE ACTIVE
+        @s360--a-background                 : null;
+        @s360--a-background-color           : null;
+
+        @s360--a-border                     : null;
+        @s360--a-border-color               : null;
+        @s360--a-border-width               : null;
+        @s360--a-border-style               : null;
+        @s360--a-border-top                 : null;
+        @s360--a-border-right               : null;
+        @s360--a-border-bottom              : null;
+        @s360--a-border-left                : null;
+
+        @s360--a-color                      : null;
+        @s360--a-letter-spacing             : null;
+        @s360--a-text-shadow                : null;
+        @s360--a-box-shadow                 : null;
+        @s360--a-reset-outline              : null;
+
+        // ON MOUSE FOCUS AND ACTIVE
+        @s360--fa-background                : null;
+        @s360--fa-background-color          : null;
+
+        @s360--fa-border                    : null;
+        @s360--fa-border-color              : null;
+        @s360--fa-border-width              : null;
+        @s360--fa-border-style              : null;
+        @s360--fa-border-top                : null;
+        @s360--fa-border-right              : null;
+        @s360--fa-border-bottom             : null;
+        @s360--fa-border-left               : null;
+
+        @s360--fa-color                     : null;
+        @s360--fa-letter-spacing            : null;
+        @s360--fa-text-shadow               : null;
+        @s360--fa-box-shadow                : null;
+        @s360--fa-reset-outline             : null;
+
+        // HOVER, FOCUS, ACTIVE
+        @s360--hfa-background               : null;
+        @s360--hfa-background-color         : null;
+
+        @s360--hfa-border                   : null;
+        @s360--hfa-border-color             : null;
+        @s360--hfa-border-width             : null;
+        @s360--hfa-border-style             : null;
+        @s360--hfa-border-top               : null;
+        @s360--hfa-border-right             : null;
+        @s360--hfa-border-bottom            : null;
+        @s360--hfa-border-left              : null;
+
+        @s360--hfa-color                    : null;
+        @s360--hfa-letter-spacing           : null;
+        @s360--hfa-text-shadow              : null;
+        @s360--hfa-box-shadow               : null;
+        @s360--hfa-reset-outline            : null;
+
+        // PLASTIC STYLE
+        // @s360--plastic-box-shadow           : inset 0 -2px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .props(){
+
+        // Reset default properties
+        .callback();
+
+        // default properties
+        .prop( background,              @s360--background );
+        .prop( background-color,        @s360--background-color );
+
+        .prop( border,                  @s360--border );
+        .prop( border-color,            @s360--border-color );
+        .prop( border-width,            @s360--border-width );
+        .prop( border-style,            @s360--border-style );
+        .prop( border-top,              @s360--border-top );
+        .prop( border-right,            @s360--border-right );
+        .prop( border-bottom,           @s360--border-bottom );
+        .prop( border-left,             @s360--border-left );
+
+        .prop( color,                   @s360--color );
+        .prop( display,                 @s360--display );
+
+        .prop( font-family,             @s360--font-family );
+        .prop( font-size,               @s360--font-size );
+        .prop( font-weight,             @s360--font-weight );
+        .prop( font-style,              @s360--font-style );
+        .prop( line-height,             @s360--line-height );
+
+        .prop( height,                  @s360--height );
+        .prop( width,                   @s360--width );
+        .prop( max-width,               @s360--max-width );
+        .prop( min-width,               @s360--min-width );
+
+        .prop( margin,                  @s360--margin );
+        .prop( padding,                 @s360--padding );
+
+        .prop( text-transform,          @s360--text-transform );
+        .prop( text-shadow,             @s360--text-shadow );
+        .prop( letter-spacing,          @s360--letter-spacing );
+
+        .prop( box-shadow,              @s360--box-shadow );
+        .prop( border-radius,           @s360--border-radius );
+
+        .transition( @s360--transition );
+        .reset-outline( @s360--reset-outline );
+
+        &, &:hover, &:focus, &:active, &:focus:active{
+            .prop( background,              @s360--all-background );
+            .prop( background-color,        @s360--all-background-color );
+
+            .prop( border,                  @s360--all-border );
+            .prop( border-color,            @s360--all-border-color );
+            .prop( border-width,            @s360--all-border-width );
+            .prop( border-style,            @s360--all-border-style );
+            .prop( border-top,              @s360--all-border-top );
+            .prop( border-right,            @s360--all-border-right );
+            .prop( border-bottom,           @s360--all-border-bottom );
+            .prop( border-left,             @s360--all-border-left );
+
+            .prop( color,                   @s360--all-color );
+            .prop( letter-spacing,          @s360--all-letter-spacing );
+            .prop( text-shadow,             @s360--all-text-shadow );
+            .prop( box-shadow,              @s360--all-box-shadow );
+
+            .reset-outline( @s360--all-reset-outline );
+        }
+
+        &:hover{
+            .prop( background,              @s360--h-background );
+            .prop( background-color,        @s360--h-background-color );
+
+            .prop( border,                  @s360--h-border );
+            .prop( border-color,            @s360--h-border-color );
+            .prop( border-width,            @s360--h-border-width );
+            .prop( border-style,            @s360--h-border-style );
+            .prop( border-top,              @s360--h-border-top );
+            .prop( border-right,            @s360--h-border-right );
+            .prop( border-bottom,           @s360--h-border-bottom );
+            .prop( border-left,             @s360--h-border-left );
+
+            .prop( color,                   @s360--h-color );
+            .prop( letter-spacing,          @s360--h-letter-spacing );
+            .prop( text-shadow,             @s360--h-text-shadow );
+            .prop( box-shadow,              @s360--h-box-shadow );
+
+            .reset-outline( @s360--h-reset-outline );
+        }
+
+        &:focus{
+            .prop( background,              @s360--f-background );
+            .prop( background-color,        @s360--f-background-color );
+
+            .prop( border,                  @s360--f-border );
+            .prop( border-color,            @s360--f-border-color );
+            .prop( border-width,            @s360--f-border-width );
+            .prop( border-style,            @s360--f-border-style );
+            .prop( border-top,              @s360--f-border-top );
+            .prop( border-right,            @s360--f-border-right );
+            .prop( border-bottom,           @s360--f-border-bottom );
+            .prop( border-left,             @s360--f-border-left );
+
+            .prop( color,                   @s360--f-color );
+            .prop( letter-spacing,          @s360--f-letter-spacing );
+            .prop( text-shadow,             @s360--f-text-shadow );
+            .prop( box-shadow,              @s360--f-box-shadow );
+
+            .reset-outline( @s360--f-reset-outline );
+        }
+
+        &:active{
+            .prop( background,              @s360--a-background );
+            .prop( background-color,        @s360--a-background-color );
+
+            .prop( border,                  @s360--a-border );
+            .prop( border-color,            @s360--a-border-color );
+            .prop( border-width,            @s360--a-border-width );
+            .prop( border-style,            @s360--a-border-style );
+            .prop( border-top,              @s360--a-border-top );
+            .prop( border-right,            @s360--a-border-right );
+            .prop( border-bottom,           @s360--a-border-bottom );
+            .prop( border-left,             @s360--a-border-left );
+
+            .prop( color,                   @s360--a-color );
+            .prop( letter-spacing,          @s360--a-letter-spacing );
+            .prop( text-shadow,             @s360--a-text-shadow );
+            .prop( box-shadow,              @s360--a-box-shadow );
+
+            .reset-outline( @s360--a-reset-outline );
+        }
+
+        &:focus, &:active, &:focus:active{
+            .prop( background,              @s360--fa-background );
+            .prop( background-color,        @s360--fa-background-color );
+
+            .prop( border,                  @s360--fa-border );
+            .prop( border-color,            @s360--fa-border-color );
+            .prop( border-width,            @s360--fa-border-width );
+            .prop( border-style,            @s360--fa-border-style );
+            .prop( border-top,              @s360--fa-border-top );
+            .prop( border-right,            @s360--fa-border-right );
+            .prop( border-bottom,           @s360--fa-border-bottom );
+            .prop( border-left,             @s360--fa-border-left );
+
+            .prop( color,                   @s360--fa-color );
+            .prop( letter-spacing,          @s360--fa-letter-spacing );
+            .prop( text-shadow,             @s360--fa-text-shadow );
+            .prop( box-shadow,              @s360--fa-box-shadow );
+
+            .reset-outline( @s360--fa-reset-outline );
+        }
+
+        &:hover, &:focus, &:active, &:focus:active{
+            .prop( background,              @s360--hfa-background );
+            .prop( background-color,        @s360--hfa-background-color );
+
+            .prop( border,                  @s360--hfa-border );
+            .prop( border-color,            @s360--hfa-border-color );
+            .prop( border-width,            @s360--hfa-border-width );
+            .prop( border-style,            @s360--hfa-border-style );
+            .prop( border-top,              @s360--hfa-border-top );
+            .prop( border-right,            @s360--hfa-border-right );
+            .prop( border-bottom,           @s360--hfa-border-bottom );
+            .prop( border-left,             @s360--hfa-border-left );
+
+            .prop( color,                   @s360--hfa-color );
+            .prop( letter-spacing,          @s360--hfa-letter-spacing );
+            .prop( text-shadow,             @s360--hfa-text-shadow );
+            .prop( box-shadow,              @s360--hfa-box-shadow );
+
+            .reset-outline( @s360--hfa-reset-outline );
+        }
+    };
+
+    // Just less rules without Selector
+    .rules( @callback ){
+        #button.deff();
+
+        @callback();
+
+        #button.props();
+    }
+    // Default without Callback
+    .new(){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"]{
+            #button.deff();
+
+            .callback(){
+
+            };
+            #button.props();
+        }
+    }
+    // Default
+    .new( @callback ){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"]{
+            #button.deff();
+
+            @callback();
+
+            #button.props();
+        }
+    };
+    // With custom Class
+    .new( @class, @callback ){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"]{
+            &.@{class}{
+                #button.deff();
+
+                @callback();
+
+                #button.props();
+            }
+        }
+    };
+    // With custom Id
+    #new( @id, @callback ){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"]{
+            &#@{id}{
+                #button.deff();
+
+                @callback();
+
+                #button.props();
+            }
+        }
+    };
+    // Add new custom Class
+    .new-add( @class, @callback ){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        .@{class}{
+            #button.deff();
+
+            @callback();
+
+            #button.props();
+        }
+    };
+    // Add new custom Class
+    .new-add( @id, @callback ){
+        .button,
+        button,
+        input[type="button"],
+        input[type="submit"],
+        input[type="reset"],
+        #@{id}{
+            #button.deff();
+
+            @callback();
+
+            #button.props();
+        }
+    };
+}

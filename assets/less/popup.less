@@ -1,0 +1,263 @@
+#popup{
+
+    // CLOSE BUTTON
+    .btn-close{
+
+        // Default Values
+        .deff(){
+
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #popup.btn-close.deff();
+
+            @callback();
+
+            #popup.btn-close.props();
+        }
+        // Default without Callback
+        .new(){
+            .selector{
+                #popup.btn-close.deff();
+
+                .callback(){
+
+                };
+                #popup.btn-close.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .selector{
+                #popup.btn-close.deff();
+
+                @callback();
+
+                #popup.btn-close.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .selector.@{class}{
+                @callback();
+
+                #popup.btn-close.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .selector#@{id}{
+                #popup.btn-close.deff();
+
+                @callback();
+
+                #popup.btn-close.props();
+            }
+        }
+    }
+
+
+    // CONTENT WRAPPER
+    .cnt-wrap{
+
+        // Default Values
+        .deff(){
+
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #popup.cnt-wrap.deff();
+
+            @callback();
+
+            #popup.cnt-wrap.props();
+        }
+        // Default without Callback
+        .new(){
+            .selector{
+                #popup.cnt-wrap.deff();
+
+                .callback(){
+
+                };
+                #popup.cnt-wrap.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .selector{
+                #popup.cnt-wrap.deff();
+
+                @callback();
+
+                #popup.cnt-wrap.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .selector.@{class}{
+                #popup.cnt-wrap.deff();
+
+                @callback();
+
+                #popup.cnt-wrap.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .selector#@{id}{
+                #popup.cnt-wrap.deff();
+
+                @callback();
+
+                #popup.cnt-wrap.props();
+            }
+        }
+    }
+
+
+    // SHADOW
+    .shadow{
+
+        // Default Values
+        .deff(){
+
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #popup.shadow.deff();
+
+            @callback();
+
+            #popup.shadow.props();
+        }
+        // Default without Callback
+        .new(){
+            .selector{
+                .callback(){
+
+                };
+                #popup.shadow.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .selector{
+                @callback();
+
+                #popup.shadow.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .selector.@{class}{
+                @callback();
+
+                #popup.shadow.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .selector#@{id}{
+                @callback();
+
+                #popup.shadow.props();
+            }
+        }
+    }
+
+
+    // CONTENT INNER
+    .cnt-inner{
+
+        // Default Values
+        .deff(){
+
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #popup.cnt-inner.deff();
+
+            @callback();
+
+            #popup.cnt-inner.props();
+        }
+        // Default without Callback
+        .new(){
+            .selector{
+                #popup.cnt-inner.deff();
+
+                .callback(){
+
+                };
+                #popup.cnt-inner.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .selector{
+                #popup.cnt-inner.deff();
+
+                @callback();
+
+                #popup.cnt-inner.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .selector.@{class}{
+                #popup.cnt-inner.deff();
+
+                @callback();
+
+                #popup.cnt-inner.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .selector#@{id}{
+                #popup.cnt-inner.deff();
+                
+                @callback();
+
+                #popup.cnt-inner.props();
+            }
+        }
+    }
+}

@@ -1,0 +1,1030 @@
+#banner{
+
+    // BANNER WRAPPER
+    // Default values
+    .deff(){
+        @s360--background               : null;
+        @s360--background-image         : null;
+        @s360--background-color         : null;
+        @s360--background-repeat        : null;
+        @s360--background-size          : null;
+
+        @s360--position                 : relative;
+        @s360--overflow                 : null;
+
+        @s360--width                    : null;
+        @s360--height                   : null;
+    }
+
+    .props(){
+
+        // Callback alow reset default values
+        .callback();
+
+        // Setup props
+        .prop( background,              @s360--background );
+        .prop( background-image,        @s360--background-image );
+        .prop( background-color,        @s360--background-color );
+        .prop( background-repeat,       @s360--background-repeat );
+        .prop( background-size,         @s360--background-size );
+
+        .prop( position,                @s360--position );
+        .prop( overflow,                @s360--overflow );
+
+        .prop( width,                   @s360--width );
+        .prop( height,                  @s360--height );
+    }
+
+    // Just less rules without Selector
+    .rules( @callback ){
+        #banner.deff();
+
+        @callback();
+
+        #banner.props();
+    }
+    // Default without Callback
+    .new(){
+        .s360-banner{
+            #banner.deff();
+
+            .callback(){
+
+            };
+            #banner.props();
+        }
+    }
+    // Default
+    .new( @callback ){
+        .s360-banner{
+            #banner.deff();
+
+            @callback();
+
+            #banner.props();
+        }
+    }
+    // With custom Class
+    .new( @class, @callback ){
+        .s360-banner.@{class}{
+            #banner.deff();
+
+            @callback();
+
+            #banner.props();
+        }
+    }
+    // With custom Id
+    #new( @id, @callback ){
+        .s360-banner#@{id}{
+            #banner.deff();
+
+            @callback();
+
+            #banner.props();
+        }
+    }
+
+
+    // Media Wrapper
+    .media{
+
+        // Default values
+        .deff(){
+            @s360--background               : null;
+            @s360--background-image         : null;
+            @s360--background-color         : null;
+            @s360--background-repeat        : null;
+            @s360--background-size          : null;
+
+            @s360--position                 : absolute;
+            @s360--overflow                 : hidden;
+
+            @s360--width                    : 100%;
+            @s360--height                   : 100%;
+
+            @s360--top                      : 0px;
+            @s360--right                    : 0px;
+            @s360--bottom                   : null;
+            @s360--left                     : null;
+
+            @s360--z-index                  : -1;
+        }
+
+        .props(){
+
+            // Callback alow reset default values
+            .callback();
+
+            // Setup props
+            .prop( background,              @s360--background );
+            .prop( background-image,        @s360--background-image );
+            .prop( background-color,        @s360--background-color );
+            .prop( background-repeat,       @s360--background-repeat );
+            .prop( background-size,         @s360--background-size );
+
+            .prop( position,                @s360--position );
+            .prop( overflow,                @s360--overflow );
+
+            .prop( width,                   @s360--width );
+            .prop( height,                  @s360--height );
+
+            .prop( top,                     @s360--top );
+            .prop( right,                   @s360--right );
+            .prop( bottom,                  @s360--bottom );
+            .prop( left,                    @s360--left );
+
+            .prop( z-index,                 @s360--z-index );
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #banner.media.deff();
+
+            @callback();
+
+            #banner.media.props();
+        }
+        // Default without Callback
+        .new(){
+            .s360-media{
+                #banner.media.deff();
+
+                .callback(){
+
+                };
+                #banner.media.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .s360-media{
+                #banner.media.deff();
+
+                @callback();
+
+                #banner.media.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .s360-media.@{class}{
+                #banner.media.deff();
+
+                @callback();
+
+                #banner.media.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .s360-media#@{id}{
+                #banner.media.deff();
+
+                @callback();
+
+                #banner.media.props();
+            }
+        }
+    }
+
+
+    // Media Image
+    .media-image{
+
+        // Default values
+        .deff(){
+            @s360--position                 : absolute;
+
+            @s360--margin                   : 0px auto;
+            @s360--margin-top               : null;
+            @s360--margin-left              : null;
+            @s360--margin-bottom            : null;
+            @s360--margin-right             : null;
+
+            @s360--top                      : 0;
+            @s360--right                    : 0;
+            @s360--bottom                   : null;
+            @s360--left                     : null;
+
+            @s360--width                    : 100%;
+
+            @s360--height                   : null;
+            @s360--min-height               : 100%;
+
+            @s360--object-fit               : cover;
+
+            @s360--z-index                  : -1;
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+            .prop( position,                @s360--position );
+
+            .prop( margin,                  @s360--margin );
+            .prop( margin-top,              @s360--margin-top );
+            .prop( margin-left,             @s360--margin-left );
+            .prop( margin-bottom,           @s360--margin-bottom );
+            .prop( margin-right,            @s360--margin-right );
+
+            .prop( top,                     @s360--top );
+            .prop( right,                   @s360--right );
+            .prop( bottom,                  @s360--bottom );
+            .prop( left,                    @s360--left );
+
+            .prop( width,                   @s360--width );
+
+            .prop( height,                  @s360--height );
+            .prop( min-height,              @s360--min-height );
+
+            .prop( -webkit-object-fit,      @s360--object-fit );
+            .prop( object-fit,              @s360--object-fit );
+
+            .prop( z-index,                 @s360--z-index );
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #banner.media-image.deff();
+
+            @callback();
+
+            #banner.media-image.props();
+        }
+
+        // Default without Callback
+        .new(){
+            .s360-media img{
+                #banner.media-image.deff();
+
+                .callback(){
+
+                };
+                #banner.media-image.props();
+            }
+        }
+
+        // Default
+        .new( @callback ){
+            .s360-media img{
+                #banner.media-image.deff();
+
+                @callback();
+
+                #banner.media-image.props();
+            }
+        }
+
+        // With custom Class
+        .new( @class, @callback ){
+            .s360-media.@{class} img{
+                #banner.media-image.deff();
+
+                @callback();
+
+                #banner.media-image.props();
+            }
+        }
+
+        // With custom Id
+        #new( @id, @callback ){
+            .s360-media#@{id} img{
+                #banner.media-image.deff();
+
+                @callback();
+
+                #banner.media-image.props();
+            }
+        }
+    }
+
+
+    // PARALLAX MEDIA IMAGE
+    .parallax-media-image{
+
+        // Default values
+        .deff(){
+            @s360--width                    : initial;
+            @s360--max-width                : none;
+            @s360--min-width                : 100%;
+
+            @s360--height                   : null;
+            @s360--min-height               : 140%;
+
+            @s360--top                      : initial;
+            @s360--right                    : null;
+            @s360--bottom                   : 0px;
+            @s360--left                     : 50%;
+            @s360--transform                : translateX(-50%);
+        }
+
+        .props(){
+
+            // Reset default values
+            .callback();
+
+            // Setup props
+            .prop( width,                   @s360--width );
+            .prop( max-width,               @s360--max-width );
+            .prop( min-width,               @s360--min-width );
+
+            .prop( height,                  @s360--height );
+            .prop( min-height,              @s360--min-height );
+
+            .prop( top,                     @s360--top );
+            .prop( right,                   @s360--right );
+            .prop( bottom,                  @s360--bottom );
+            .prop( left,                    @s360--left );
+
+            .prop( transform,               @s360--transform );
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #banner.parallax-media-image.deff();
+
+            @callback();
+
+            #banner.parallax-media-image.props();
+        }
+
+        // Default without Callback
+        .new(){
+            .s360-media.s360-parallax img{
+                #banner.parallax-media-image.deff();
+
+                .callback(){
+
+                };
+                #banner.parallax-media-image.props();
+            }
+        }
+
+        // Default
+        .new( @callback ){
+            .s360-media.s360-parallax img{
+                #banner.parallax-media-image.deff();
+
+                @callback();
+
+                #banner.parallax-media-image.props();
+            }
+        }
+
+        // With custom Class
+        .new( @class, @callback ){
+            .s360-media.s360-parallax.@{class} img{
+                #banner.parallax-media-image.deff();
+
+                @callback();
+
+                #banner.parallax-media-image.props();
+            }
+        }
+
+        // With custom Id
+        #new( @id, @callback ){
+            .s360-media.s360-parallax#@{id} img{
+                #banner.parallax-media-image.deff();
+
+                @callback();
+
+                #banner.parallax-media-image.props();
+            }
+        }
+    }
+
+
+    // MASK
+    .mask{
+
+        // Default values
+        .deff(){
+            @s360--background               : null;
+            @s360--background-image         : null;
+            @s360--background-color         : rgba(0,0,0, 0.75);
+            @s360--background-repeat        : null;
+            @s360--background-size          : null;
+
+            @s360--position                 : absolute;
+
+            @s360--width                    : 100%;
+            @s360--height                   : 100%;
+
+            @s360--top                      : 0px;
+            @s360--right                    : null;
+            @s360--bottom                   : null;
+            @s360--left                     : 0px;
+
+            @s360--z-index                  : -1;
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+            .prop( background,              @s360--background );
+            .prop( background-image,        @s360--background-image );
+            .prop( background-color,        @s360--background-color );
+            .prop( background-repeat,       @s360--background-repeat );
+            .prop( background-size,         @s360--background-size );
+
+            .prop( position,                @s360--position );
+
+            .prop( width,                   @s360--width );
+            .prop( height,                  @s360--height );
+
+            .prop( top,                     @s360--top );
+            .prop( right,                   @s360--right );
+            .prop( bottom,                  @s360--bottom );
+            .prop( left,                    @s360--left );
+
+            .prop( z-index,                 @s360--z-index );
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #banner.mask.deff();
+
+            @callback();
+
+            #banner.mask.props();
+        }
+        // Default without Callback
+        .new(){
+            .s360-mask{
+                #banner.mask.deff();
+
+                .callback(){
+
+                };
+                #banner.mask.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .s360-mask{
+                #banner.mask.deff();
+
+                @callback();
+
+                #banner.mask.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .s360-mask.@{class}{
+                #banner.mask.deff();
+
+                @callback();
+
+                #banner.mask.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .s360-mask#@{id}{
+                #banner.mask.deff();
+
+                @callback();
+
+                #banner.mask.props();
+            }
+        }
+    }
+
+
+    // CONTENT WRAPPER
+    .cnt-wrap{
+
+        // Default values
+        .deff(){
+            @s360--d-table-width            : 100%;
+            @s360--d-table-height           : 470px;
+
+            @s360--d-table-cell-v-align     : middle;
+            @s360--d-table-cell-align       : center;
+
+            @s360--inner-max-width          : 960px;
+
+            @s360--inner-padding            : 0px 20px;
+            @s360--inner-padding-top        : null;
+            @s360--inner-padding-right      : null;
+            @s360--inner-padding-bottom     : null;
+            @s360--inner-padding-left       : null;
+
+            @s360--inner-margin             : -50px auto 0px auto;
+            @s360--inner-margin-top         : null;
+            @s360--inner-margin-right       : null;
+            @s360--inner-margin-bottom      : null;
+            @s360--inner-margin-left        : null;
+        }
+
+        .props(){
+
+            // Callback alow reset default values and add additional rules
+            .callback();
+
+            // Setup props
+            .d-table{
+                .prop( width,                   @s360--d-table-width );
+                .prop( height,                  @s360--d-table-height );
+            }
+
+            .d-table-cell{
+                .prop( vertical-align,          @s360--d-table-cell-v-align );
+                .prop( text-align,              @s360--d-table-cell-align );
+            }
+
+            .s360-cnt-inner{
+                .prop( max-width,               @s360--inner-max-width );
+
+                .prop( padding,                 @s360--inner-padding );
+                .prop( padding-top,             @s360--inner-padding-top );
+                .prop( padding-right,           @s360--inner-padding-right );
+                .prop( padding-bottom,          @s360--inner-padding-bottom );
+                .prop( padding-left,            @s360--inner-padding-left );
+
+                .prop( margin,                  @s360--inner-margin );
+                .prop( margin-top,              @s360--inner-margin-top );
+                .prop( margin-right,            @s360--inner-margin-right );
+                .prop( margin-bottom,           @s360--inner-margin-bottom );
+                .prop( margin-left,             @s360--inner-margin-left );
+            }
+        }
+
+        // Just less rules without Selector
+        .rules( @callback ){
+            #banner.cnt-wrap.deff();
+
+            @callback();
+
+            #banner.cnt-wrap.props();
+        }
+        // Default without Callback
+        .new(){
+            .s360-cnt-wrap{
+                #banner.cnt-wrap.deff();
+
+                .callback(){
+
+                };
+                #banner.cnt-wrap.props();
+            }
+        }
+        // Default
+        .new( @callback ){
+            .s360-cnt-wrap{
+                #banner.cnt-wrap.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.props();
+            }
+        }
+        // With custom Class
+        .new( @class, @callback ){
+            .s360-cnt-wrap.@{class}{
+                #banner.cnt-wrap.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.props();
+            }
+        }
+        // With custom Id
+        #new( @id, @callback ){
+            .s360-cnt-wrap#@{id}{
+                #banner.cnt-wrap.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.props();
+            }
+        }
+
+
+        // CONTENT ELEMENTS
+        // SMALL TITLE
+        .small-title{
+
+            // Default values
+            .deff(){
+                @s360--text-transform           : uppercase;
+
+                @s360--color                    : #fff;
+
+                @s360--width                    : null;
+                @s360--max-width                : null;
+
+                @s360--font-size                : 14px;
+                @s360--font-weight              : null;
+
+                @s360--font-size-max-1199       : null;
+                @s360--font-size-max-1024       : null;
+                @s360--font-size-max-991        : null;
+                @s360--font-size-max-767        : null;
+                @s360--font-size-max-580        : null;
+
+                @s360--letter-spacing           : 1.35px;
+
+                @s360--padding                  : null;
+                @s360--padding-top              : null;
+                @s360--padding-right            : null;
+                @s360--padding-bottom           : null;
+                @s360--padding-left             : null;
+
+                @s360--margin                   : null;
+                @s360--margin-top               : null;
+                @s360--margin-right             : null;
+                @s360--margin-bottom            : null;
+                @s360--margin-left              : null;
+
+                @s360--text-shadow              : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values and add additional rules
+                .callback();
+
+                // Setup props
+                .prop( text-transform,          @s360--text-transform );
+
+                .prop( color,                   @s360--color );
+
+                .prop( width,                   @s360--width );
+                .prop( max-width,               @s360--max-width );
+
+                .prop( font-size,               @s360--font-size );
+                .prop( font-weight,             @s360--font-weight );
+
+                @media (max-width: 1199px){
+                    .prop( font-size, @s360--font-size-max-1199 );
+                }
+                @media (max-width: 1024px){
+                    .prop( font-size, @s360--font-size-max-1024 );
+                }
+                @media (max-width: 991px){
+                    .prop( font-size, @s360--font-size-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( font-size, @s360--font-size-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( font-size, @s360--font-size-max-580 );
+                }
+
+                .prop( letter-spacing,          @s360--letter-spacing );
+
+                .prop( padding,                 @s360--padding );
+                .prop( padding-top,             @s360--padding-top );
+                .prop( padding-right,           @s360--padding-right );
+                .prop( padding-bottom,          @s360--padding-bottom );
+                .prop( padding-left,            @s360--padding-left );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                .prop( text-shadow,             @s360--text-shadow );
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #banner.cnt-wrap.small-title.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.small-title.props();
+            }
+            // Default without Callback
+            .new(){
+                .s360-small-title{
+                    #banner.cnt-wrap.small-title.deff();
+
+                    .callback(){
+
+                    };
+                    #banner.cnt-wrap.small-title.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-small-title{
+                    #banner.cnt-wrap.small-title.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.small-title.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                .s360-small-title.@{class}{
+                    #banner.cnt-wrap.small-title.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.small-title.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                .s360-small-title#@{id}{
+                    #banner.cnt-wrap.small-title.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.small-title.props();
+                }
+            }
+        }
+
+
+        // HEADLINE
+        .headline{
+
+            // Default values
+            .deff(){
+                @s360--text-transform           : uppercase;
+
+                @s360--color                    : #fff;
+
+                @s360--width                    : null;
+                @s360--max-width                : null;
+
+                @s360--font-size                : 48px;
+                @s360--font-weight              : 600;
+
+                @s360--font-size-max-1199       : null;
+                @s360--font-size-max-1024       : null;
+                @s360--font-size-max-991        : 48px;
+                @s360--font-size-max-767        : 36px;
+                @s360--font-size-max-580        : 28px;
+
+                @s360--letter-spacing           : null;
+
+                @s360--padding                  : null;
+                @s360--padding-top              : null;
+                @s360--padding-right            : null;
+                @s360--padding-bottom           : null;
+                @s360--padding-left             : null;
+
+                @s360--margin                   : 15px 0px;
+                @s360--margin-top               : null;
+                @s360--margin-right             : null;
+                @s360--margin-bottom            : null;
+                @s360--margin-left              : null;
+
+                @s360--text-shadow              : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values and add additional rules
+                .callback();
+
+                // Setup props
+                .prop( text-transform,          @s360--text-transform );
+
+                .prop( color,                   @s360--color );
+
+                .prop( width,                   @s360--width );
+                .prop( max-width,               @s360--max-width );
+
+                .prop( font-size,               @s360--font-size );
+                .prop( font-weight,             @s360--font-weight );
+
+                @media (max-width: 1199px){
+                    .prop( font-size, @s360--font-size-max-1199 );
+                }
+                @media (max-width: 1024px){
+                    .prop( font-size, @s360--font-size-max-1024 );
+                }
+                @media (max-width: 991px){
+                    .prop( font-size, @s360--font-size-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( font-size, @s360--font-size-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( font-size, @s360--font-size-max-580 );
+                }
+
+                .prop( letter-spacing,          @s360--letter-spacing );
+
+                .prop( padding,                 @s360--padding );
+                .prop( padding-top,             @s360--padding-top );
+                .prop( padding-right,           @s360--padding-right );
+                .prop( padding-bottom,          @s360--padding-bottom );
+                .prop( padding-left,            @s360--padding-left );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                .prop( text-shadow,             @s360--text-shadow );
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #banner.cnt-wrap.headline.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.headline.props();
+            }
+            // Default without Callback
+            .new(){
+                .s360-headline{
+                    #banner.cnt-wrap.headline.deff();
+
+                    .callback(){
+
+                    };
+                    #banner.cnt-wrap.headline.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-headline{
+                    #banner.cnt-wrap.headline.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.headline.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                .s360-headline.@{class}{
+                    #banner.cnt-wrap.headline.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.headline.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                .s360-headline#@{id}{
+                    #banner.cnt-wrap.headline.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.headline.props();
+                }
+            }
+        }
+
+
+        // DESCRIPTION
+        .description{
+
+            // Default values
+            .deff(){
+                @s360--text-transform           : null;
+
+                @s360--color                    : #fff;
+
+                @s360--width                    : null;
+                @s360--max-width                : null;
+
+                @s360--font-size                : 24px;
+                @s360--font-weight              : 500;
+
+                @s360--font-size-max-1199       : null;
+                @s360--font-size-max-1024       : null;
+                @s360--font-size-max-991        : null;
+                @s360--font-size-max-767        : null;
+                @s360--font-size-max-580        : null;
+
+                @s360--letter-spacing           : null;
+
+                @s360--padding                  : null;
+                @s360--padding-top              : null;
+                @s360--padding-right            : null;
+                @s360--padding-bottom           : null;
+                @s360--padding-left             : null;
+
+                @s360--margin                   : null;
+                @s360--margin-top               : null;
+                @s360--margin-right             : null;
+                @s360--margin-bottom            : null;
+                @s360--margin-left              : null;
+
+                @s360--text-shadow              : null;
+            }
+
+            .props(){
+
+                // Callback alow reset default values and add additional rules
+                .callback();
+
+                // Setup props
+                .prop( text-transform,          @s360--text-transform );
+
+                .prop( color,                   @s360--color );
+
+                .prop( width,                   @s360--width );
+                .prop( max-width,               @s360--max-width );
+
+                .prop( font-size,               @s360--font-size );
+                .prop( font-weight,             @s360--font-weight );
+
+                @media (max-width: 1199px){
+                    .prop( font-size, @s360--font-size-max-1199 );
+                }
+                @media (max-width: 1024px){
+                    .prop( font-size, @s360--font-size-max-1024 );
+                }
+                @media (max-width: 991px){
+                    .prop( font-size, @s360--font-size-max-991 );
+                }
+                @media (max-width: 767px){
+                    .prop( font-size, @s360--font-size-max-767 );
+                }
+                @media (max-width: 580px){
+                    .prop( font-size, @s360--font-size-max-580 );
+                }
+
+                .prop( letter-spacing,          @s360--letter-spacing );
+
+                .prop( padding,                 @s360--padding );
+                .prop( padding-top,             @s360--padding-top );
+                .prop( padding-right,           @s360--padding-right );
+                .prop( padding-bottom,          @s360--padding-bottom );
+                .prop( padding-left,            @s360--padding-left );
+
+                .prop( margin,                  @s360--margin );
+                .prop( margin-top,              @s360--margin-top );
+                .prop( margin-right,            @s360--margin-right );
+                .prop( margin-bottom,           @s360--margin-bottom );
+                .prop( margin-left,             @s360--margin-left );
+
+                .prop( text-shadow,             @s360--text-shadow );
+            }
+
+            // Just less rules without Selector
+            .rules( @callback ){
+                #banner.cnt-wrap.description.deff();
+
+                @callback();
+
+                #banner.cnt-wrap.description.props();
+            }
+            // Default without Callback
+            .new(){
+                .s360-description{
+                    #banner.cnt-wrap.description.deff();
+
+                    .callback(){
+
+                    };
+                    #banner.cnt-wrap.description.props();
+                }
+            }
+            // Default
+            .new( @callback ){
+                .s360-description{
+                    #banner.cnt-wrap.description.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.description.props();
+                }
+            }
+            // With custom Class
+            .new( @class, @callback ){
+                .s360-description.@{class}{
+                    #banner.cnt-wrap.description.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.description.props();
+                }
+            }
+            // With custom Id
+            #new( @id, @callback ){
+                .s360-description#@{id}{
+                    #banner.cnt-wrap.description.deff();
+
+                    @callback();
+
+                    #banner.cnt-wrap.description.props();
+                }
+            }
+        }
+    }
+}

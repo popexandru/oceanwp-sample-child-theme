@@ -1,59 +1,44 @@
 <?php
+
     /**
-     *  DEVELOPMENT MODE
-     *  Compile file.less > file.css
+     *  FRONT END
      */
 
-    if( class_exists( 'WPLessPlugin' ) ){
-        $lessConfig = WPLessPlugin::getInstance()->getConfiguration();
+    add_action( 's360_less_scripts', function( $less ){
 
-        // compiles in the active theme, in a ‘compiled-css’ subfolder
-        $lessConfig->setUploadDir(get_stylesheet_directory());
-        $lessConfig->setUploadUrl(get_stylesheet_directory_uri());
+        $less -> add( '/public/less/styles.less', '/public/css/styles.css' );
+        //$less -> add( '/public/less/docs.less', '/public/css/docs.css' );
 
-        add_action( 'wp-less_init', function( $WPLess ){
-            $WPLess->getCompiler()->setFormatter( 'compressed' );
-        });
+        $less -> compile();
 
-        add_filter( 'wp-less_stylesheet_compute_target_path', function( $path ){
+    }, 10 );
 
-            $path = str_replace( '-%s.css', '.css', str_replace( '/S360_THEME_SLUG/public/less/', '/public/css/', $path ) );
-            $path = str_replace( '-%s.css', '.css', str_replace( '/S360_THEME_SLUG/admin/less/', '/admin/css/', $path ) );
+    /**
+     *  BACKEND END
+     */
 
-            return $path;
-        });
+    add_action( 's360_less_admin_scripts', function( $less ){
 
-        /**
-         *  LOAD LESS STYLES
-         */
+        $less -> add( '/admin/less/styles.less', '/admin/css/styles.css' );
+        //$less -> add( '/public/less/docs.less', '/public/css/docs.css' );
 
-        add_action( 'wp_enqueue_scripts', function(){
-            wp_register_style( 's360-styles', get_stylesheet_directory_uri() . '/public/less/styles.less', null, null );
-            wp_enqueue_style( 's360-styles' );
-        }, 100 );
+        $less -> compile();
 
-        add_action( 'admin_enqueue_scripts', function(){
-            wp_enqueue_style( 's360-styles', get_stylesheet_directory_uri() . '/admin/less/styles.less', false, null );
-            wp_enqueue_style( 's360-styles' );
-        });
-    }
+    }, 10 );
 
-    else{
+    /**
+     *  LOAD CSS STYLES
+     */
 
-        /**
-         *  LOAD CSS STYLES
-         */
+    add_action( 'wp_enqueue_scripts', function(){
+        wp_register_style( 's360-styles', get_stylesheet_directory_uri() . '/public/css/styles.css', null, null );
+        wp_enqueue_style( 's360-styles' );
+    }, 100 );
 
-        add_action( 'wp_enqueue_scripts', function(){
-            wp_register_style( 's360-styles', get_stylesheet_directory_uri() . '/public/css/styles.css', null, null );
-            wp_enqueue_style( 's360-styles' );
-        }, 100 );
-
-        add_action( 'admin_enqueue_scripts', function(){
-            wp_enqueue_style( 's360-styles', get_stylesheet_directory_uri() . '/admin/css/styles.css', null, null );
-            wp_enqueue_style( 's360-styles' );
-        });
-    }
+    add_action( 'admin_enqueue_scripts', function(){
+        wp_enqueue_style( 's360-styles', get_stylesheet_directory_uri() . '/admin/css/styles.css', null, null );
+        wp_enqueue_style( 's360-styles' );
+    });
 
     /**
      *  LOAD JavaScripts

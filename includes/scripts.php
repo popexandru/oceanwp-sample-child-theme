@@ -1,5 +1,4 @@
 <?php
-
     /**
      *  FRONT END
      */
@@ -67,4 +66,3 @@
         wp_register_script( 's360-scripts', get_stylesheet_directory_uri() . '/admin/js/scripts.js', [ 'jquery' ], null, true );
         wp_enqueue_script( 's360-scripts' );
     });
-?>

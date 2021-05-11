@@ -10,6 +10,8 @@
     //require_once get_stylesheet_directory() . '/includes/admin-login.php';
     //require_once get_stylesheet_directory() . '/includes/custom-posts.php';
     //require_once get_stylesheet_directory() . '/includes/meta.php';
+    //require_once get_stylesheet_directory() . '/includes/widgets.php';
+    //require_once get_stylesheet_directory() . '/includes/menu.php';
 
     // EXTRA
     //require_once get_stylesheet_directory() . '/includes/extra/table-sizes.php';

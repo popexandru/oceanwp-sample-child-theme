@@ -1,5 +1,9 @@
+.s360-field {
+  position: relative;
+  display: block;
+}
 .s360-field label {
-  diplay: block;
+  display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -8,12 +12,12 @@
   color: #666;
   font-weight: normal;
 }
-.s360-field input[type=\"text\"],
-.s360-field input[type=\"url\"],
-.s360-field input[type=\"number\"],
-.s360-field input[type=\"email\"],
-.s360-field input[type=\"search\"],
-.s360-field input[type=\"date\"],
+.s360-field input[type="text"],
+.s360-field input[type="url"],
+.s360-field input[type="number"],
+.s360-field input[type="email"],
+.s360-field input[type="search"],
+.s360-field input[type="date"],
 .s360-field textarea,
 .s360-field select {
   display: block;
@@ -21,10 +25,10 @@
   min-width: 100%;
   max-width: 100%;
 }
-.s360-field input[type=\"url\"] + input[type=\"button\"],
-.s360-field input[type=\"url\"] + input[type=\"submit\"],
-.s360-field input[type=\"url\"] + button[type=\"button\"],
-.s360-field input[type=\"url\"] + button[type=\"submit\"] {
+.s360-field input[type="url"]   input[type="button"],
+.s360-field input[type="url"]   input[type="submit"],
+.s360-field input[type="url"]   button[type="button"],
+.s360-field input[type="url"]   button[type="submit"] {
   margin-top: 10px;
 }
 .s360-page {
@@ -35,7 +39,7 @@
   margin-right: -10px;
 }
 #s360-build-table-sizes:after {
-  content: \'\';
+  content: '';
   display: table;
   width: 100%;
   clear: both;
